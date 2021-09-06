@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <form>
+        <div class="form-head">
+            <h1>Please log into your account</h1>
+            <small>New user? <a href="signup.html">Create an account</a></small>
+        </div>
+        <div class="form-body">
+            <input type="text" placeholder="Username" class="input-box" id="username">
+            <input type="text" placeholder="Password" class="input-box" id="password">
+            <small id="error-log"></small>
+        </div>  
+        <div class="form-footer">
+           <input type="submit" value="Log in" id="input-button">
+        </div>
+    </form>
+    <script type="module" src='NotLogged.js'></script>
+</body>
+
+</html>

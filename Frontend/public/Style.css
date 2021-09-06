@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap");
+
+:root {
+  --background-color: lightblue;
+  --resize-factor: 1;
+}
+
+@media only screen and (max-width: 450px) {
+  :root {
+    --resize-factor: 0.6;
+  }
+}
+
+@media only screen and (max-width: 550px) and (min-width: 450px) {
+    :root {
+      --resize-factor: 0.75;
+    }
+  }
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-color);
+}
+form {
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  border: black 3px solid;
+  border-radius: 20px;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: calc(2em * var(--resize-factor));
+  margin: 0px;
+  margin-bottom: 5px;
+}
+h3 {
+  font-size: calc(1.2em * var(--resize-factor));
+  margin: 0px;
+  margin-bottom: 5px;
+}
+small {
+  font-size: calc(16px * var(--resize-factor));
+}
+
+.form-head,
+.form-body,
+.form-footer {
+  width: calc(500px * var(--resize-factor));
+  display: grid;
+  place-items: center;
+}
+
+.form-body,
+.form-footer {
+  margin-top: 20px;
+}
+
+.input-box {
+  font-family: "Noto Sans JP", sans-serif;
+  width: calc(300px * var(--resize-factor));
+  height: 30px;
+  outline: none;
+  font-size: medium;
+  border: none;
+  border-bottom: 2px grey solid;
+  margin-bottom: 5px;
+}
+.input-box:hover {
+  color: black;
+  border-color: black;
+}
+
+#input-button {
+  font-family: "Noto Sans JP", sans-serif;
+  height: calc(40px);
+  width: calc(120px * var(--resize-factor));
+  font-size: medium;
+  margin-left: calc(200px * var(--resize-factor));
+  border: 2px grey solid;
+  color: grey;
+  font-size: calc(18px * var(--resize-factor));
+  border-radius: 10px;
+}
+#input-button:hover {
+  color: black;
+  border-color: black;
+}
+#error-log {
+  color: red;
+  width: 60%;
+  height: 20px;
+  text-align: right;
+}
+#score {
+  float: right;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  border: black 3px solid;
+  border-radius: 20px;
+  padding: 10px;
+
+}
