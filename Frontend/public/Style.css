@@ -5,7 +5,13 @@
   --resize-factor: 1;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 350px){
+  :root {
+    --resize-factor: 0.55;
+  }
+}
+
+@media only screen and (max-width: 450px) and (min-width: 350px) {
   :root {
     --resize-factor: 0.6;
   }

@@ -29,6 +29,7 @@ public class SentenceService {
     }
 
     public Sentence randomSentence() {
+
         Random rand = new Random();
         List sentence = sentenceRepository.findAll();
         return (Sentence) sentence.get(rand.nextInt(sentence.size()));
